@@ -1,0 +1,101 @@
+h1 {
+  color: #9356DC;
+  text-align: center;
+}
+
+h2 {
+  color: #FF79DA;
+  text-align: center;
+}
+
+h3 {
+  font-size: 26px;
+  color: #99E2D0;
+}
+
+h4 {
+  font-size: 24px;
+  color: #99E2D0;
+}
+
+.icon {
+  margin: 20px;
+}
+
+.icon_choice {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  color: #FF79DA;
+  background-color: #9356DC;
+  font-size: 25px;
+  border-radius: 20px;
+  box-shadow: 5px 5px #FF79DA;
+  height: 50px;
+  width: auto;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  width: 300px;
+}
+.location i {
+  padding-right: 5px;
+}
+.location .formulaire {
+  font-size: 30px;
+  padding-left: 10px;
+  width: 250px;
+}
+
+main img {
+  font-size: medium;
+  height: auto;
+  width: 100%;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header div .location {
+  flex-direction: row;
+}
+header ul {
+  list-style-type: none;
+}
+header ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 5px;
+}
+
+footer {
+  background-color: black;
+}
+footer ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer ul li img {
+  background-color: white;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
