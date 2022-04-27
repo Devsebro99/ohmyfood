@@ -1,0 +1,21 @@
+.location{
+    @include flex_row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    width: 300px;
+    i{
+        padding-right: 5px;
+    }
+    .formulaire{
+        font-size: 30px;
+        padding-left: 10px;
+        width: 250px;
+    }
+}
+
+main{
+    img{
+        @include img_size;       
+    }      
+}
