@@ -1,0 +1,11 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "restaurant menu",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/styles.scss:./css/styles.css"
+  },
+  "author": "Robin Sebastien",
+  "license": "ISC"
+}
