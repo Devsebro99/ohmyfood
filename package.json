@@ -7,5 +7,13 @@
     "sass": "sass --watch ./sass/styles.scss:./css/styles.css"
   },
   "author": "Robin Sebastien",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devsebro99/ohmyfood.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Devsebro99/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Devsebro99/ohmyfood#readme"
 }
