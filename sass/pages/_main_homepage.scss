@@ -1,0 +1,29 @@
+main{
+    img{
+        @include img_size;       
+    }      
+}
+
+
+.image {
+    position: absolute;    
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    margin: 10px;   
+    z-index: 1;
+
+    & h6{
+        
+        position:relative;
+        right: 10%;
+        top: 10%;       
+        height:60px;
+        width:150px;
+        text-align: center; 
+        background-color: aqua;
+        z-index: 2;     
+    }    
+}

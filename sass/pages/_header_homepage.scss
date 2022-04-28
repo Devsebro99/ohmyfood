@@ -1,0 +1,18 @@
+header{
+    div{
+        @include flex_column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    ul{
+        list-style-type: none;
+        li{
+            @include flex_row;
+            justify-content: center;
+            align-items: center;
+            padding-right: 5px;               
+        }
+    }   
+}
