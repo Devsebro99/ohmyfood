@@ -3,16 +3,38 @@ header{
         @include flex_column;
         justify-content: center;
         align-items: center;
-
+        .icon{
+            font-size: 20px;
+            margin: 20px;
+        }
     }
 
-    ul{
-        list-style-type: none;
-        li{
-            @include flex_row;
-            justify-content: center;
-            align-items: center;
-            padding-right: 5px;               
+    
+    & nav{
+
+        & ul{           
+            list-style-type: none;
+            @include flex_column;
+            align-items: flex-start;
+            & li{
+                @include flex_row;
+                justify-content: center;
+                align-items: center;
+                padding-right: 5px;
+            }              
         }
-    }   
+    }       
+}
+
+.icon_number{
+    background-color: $first;
+    padding: 6px 10px;
+    border-radius: 60px;
+    color: $white;
+}
+
+.icon_choice{
+    margin: 0px 10px 0px 10px;    
+    font-size: 24px;
+    color:$first;
 }

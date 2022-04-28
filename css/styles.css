@@ -1,101 +1,156 @@
-h1 {
-  color: #9356DC;
-  text-align: center;
+@media screen and (max-width: 768px) {
+  h1 {
+    color: black;
+    text-align: center;
+  }
+
+  h2 {
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+  }
+
+  h3 {
+    color: black;
+    font-size: 26px;
+    margin: px;
+  }
+
+  h4 {
+    color: black;
+    font-size: 24px;
+  }
+
+  h5 {
+    color: black;
+    font-size: 20px;
+  }
+
+  h6 {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: shrikhand;
+    src: url(../../images/police/Shrikhand/Shrikhand-Regular.ttf);
+    src: url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff);
+    src: url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff2);
+    font-family: roboto;
+    src: url(../../images/police/roboto/Roboto-Regular.ttf);
+    src: url(../../images/police/roboto/roboto-regular-webfont.woff);
+    src: url(../../images/police/roboto/roboto-regular-webfont.woff2);
+  }
+  .btn {
+    color: white;
+    background-color: #9356DC;
+    font-size: 18px;
+    border-radius: 30px;
+    height: 50px;
+    width: auto;
+    height: 50px;
+    width: 250px;
+  }
+
+  .location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    width: 300px;
+  }
+  .location i {
+    padding-right: 5px;
+  }
+  .location .formulaire {
+    font-size: 30px;
+    padding-left: 10px;
+    width: 250px;
+  }
+
+  footer {
+    background-color: black;
+  }
+  footer ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer ul li img {
+    background-color: white;
+    color: white;
+  }
+
+  header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header div .icon {
+    font-size: 20px;
+    margin: 20px;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header nav ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+  }
+
+  .icon_number {
+    background-color: #9356DC;
+    padding: 6px 10px;
+    border-radius: 60px;
+    color: white;
+  }
+
+  .icon_choice {
+    margin: 0px 10px 0px 10px;
+    font-size: 24px;
+    color: #9356DC;
+  }
+
+  main img {
+    font-size: medium;
+    height: auto;
+    width: 100%;
+  }
+
+  .image {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    z-index: 1;
+  }
+  .image h6 {
+    position: relative;
+    right: 10%;
+    top: 10%;
+    height: 60px;
+    width: 150px;
+    text-align: center;
+    background-color: aqua;
+    z-index: 2;
+  }
 }
 
-h2 {
-  color: #FF79DA;
-  text-align: center;
-}
-
-h3 {
-  font-size: 26px;
-  color: #99E2D0;
-}
-
-h4 {
-  font-size: 24px;
-  color: #99E2D0;
-}
-
-.icon {
-  margin: 20px;
-}
-
-.icon_choice {
-  margin-right: 10px;
-  font-size: 24px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.btn {
-  color: #FF79DA;
-  background-color: #9356DC;
-  font-size: 25px;
-  border-radius: 20px;
-  box-shadow: 5px 5px #FF79DA;
-  height: 50px;
-  width: auto;
-}
-
-.location {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 30px;
-  width: 300px;
-}
-.location i {
-  padding-right: 5px;
-}
-.location .formulaire {
-  font-size: 30px;
-  padding-left: 10px;
-  width: 250px;
-}
-
-main img {
-  font-size: medium;
-  height: auto;
-  width: 100%;
-}
-
-header div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-header div .location {
-  flex-direction: row;
-}
-header ul {
-  list-style-type: none;
-}
-header ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-right: 5px;
-}
-
-footer {
-  background-color: black;
-}
-footer ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-footer ul li img {
-  background-color: white;
-  color: white;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */
