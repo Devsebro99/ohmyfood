@@ -1,29 +1,93 @@
 main{
-    img{
-        @include img_size;       
-    }      
-}
+   
 
-
-.image {
-    position: absolute;    
-    display:flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include flex_column;    
     height: auto;
-    width: 100%;
-    margin: 10px;   
-    z-index: 1;
+    width:768px;
 
-    & h6{
-        
-        position:relative;
-        right: 10%;
-        top: 10%;       
-        height:60px;
-        width:150px;
-        text-align: center; 
-        background-color: aqua;
-        z-index: 2;     
+    & section{
+        justify-content: space-around;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+
+        & aside{
+            @include flex_column;
+            justify-content:left;
+            align-items: flex-start;
+            height:600px;
+            width:768px;
+
+            & .box_img{               
+                position: absolute;
+                z-index:1;            
+                height: 350px;
+                width: 98%;                
+                & img{
+                    position: absolute;
+                    z-index:1;    
+                    height: 350px;
+                    width: 98%;
+                      
+                }                
+                & h6{
+                    @include marge_zero;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $tertiary;
+                    color:darken($color: $tertiary, $amount: 45%);
+                    position: relative;
+                    left: 75%;
+                    top: 5%;                
+                    font-size: 15px;
+                    height:40px;
+                    width: 100px;
+                    z-index:2;    
+                }
+            }  
+
+            & .box_undermenu{
+                @include flex_row;
+                position: relative;
+                left: 0%;
+                top: 58%;
+                height:150px;
+                width: 98%; 
+                      
+            
+                & .name_menu{
+                    @include flex_column;
+                    height:150px;
+                    width: 400px;
+                    & h4{
+                        display:flex;
+                        justify-content: flex-start;
+                        align-items:center;
+                        @include marge_zero;
+                        color:$standard;
+                        font-size: 24px;
+                        height: 50px;
+                        width: 100%;
+                    }
+                    
+                    & h5{
+                        display:flex;
+                        justify-content: flex-start;
+                        align-items:center;
+                        @include marge_zero;
+                        color:$standard;
+                        font-size: 20px;
+                        height: 50px;
+                        width: 100%;
+                    }
+                }
+            }
+
+        }
     }    
 }
+
+
+
+

@@ -1,18 +1,19 @@
 @media screen and (max-width:768px){
-
+@import "./base/box-sizing";
+@import "./base/police";
 @import "./utils/variables";
+
 @import "./utils/_fonctions";
 @import "./utils/mixins";
 @import "./utils/placeholders";
-@import "./base/box-sizing";
-@import "./base/police";
+
+
 @import "./componnents/buttons";
 @import "./layouts/form";
 @import "./layouts/_header_footer";
 @import "./layouts/main_menu";
 @import "./pages/_header_homepage";
 @import "./pages/main_homepage";
-
 }
 
 

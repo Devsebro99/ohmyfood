@@ -6,8 +6,10 @@
     display: flex;
     flex-direction: column;
 }
-@mixin img_size {
-    font-size: medium;
-    height: auto;
-    width: 100%;
+@mixin marge_zero {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+
