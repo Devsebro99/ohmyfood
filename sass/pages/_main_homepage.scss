@@ -1,93 +1,270 @@
-main{
-   
+@media screen and (max-width:768px){
+    h1,h2,h3,p{
+        color:$black;
+    }
+    
+    h1,span{   
+        text-align: center;
+    }
+    
+    p{
+        font-size: 17px;
+    }
+    
+    h3{
+        margin-block-end: 0em;
+    }
+    
+    main{ 
+        & .first{         
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: 100%;
+            
+            & .explorer{
+                @include flex_column;
+                justify-content: center;
+                align-items: center;
+                max-height: auto;
+                max-width:100%;
+            }
+        }
+    
+        & nav{
+            margin-left: 20px;
+            & ul{           
+                list-style-type: none;
+                @include marge_zero;
+                @include flex_column;
+                align-items: flex-start;
+                justify-content: space-around;
+                font-weight: bold;
+                & li{
+                    @include flex_row;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding-right: 5px;
+                    
+                }              
+            }
+        }     
+    }
 
-    @include flex_column;    
-    height: auto;
-    width:768px;
+    .icon_number{
+        background-color: $first;
+        padding: 6px 10px;
+        border-radius: 60px;
+        color: $white;
+        
+    }
+    .icon_choice{
+        margin: 0px 10px 0px 10px;    
+        font-size: 26px;
+        color:$first;
+        width: 40px;
 
-    & section{
-        justify-content: space-around;
+    }
+
+
+    /* Les cartes des restaurants*/
+    .card{
+        justify-content: space-between;
         align-items: flex-start;
+        max-height: auto;
+        max-width: 100%;
+        text-decoration: none;
+        
+        &:hover{
+            cursor: url(./../images/restaurants/dinnercolor.png), pointer;
+        }   
+        &_picture{  
+            height: 350px;
+            width: 100%;
+            max-height: 500px;
+            max-width: 100%;
+        }
+        &_desciption{
+            @include flex_row;
+            align-items: center;
+            margin-bottom: 20px;
+            max-height: 200px;
+            max-width: 100%;                
+        }
+        &_text{
+            @include flex_column;
+            justify-content:center;
+            align-items: flex-start;
+            margin-left: 10px;
+        }
+    }
+
+    /* Affichage de "Nouveau" sur l'image*/
+    .new{
+        position: relative;
+    }
+    .new::before{
+        content: "Nouveau";
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 100px;
+        background-color:$tertiary;
+        color: $darktertiary;  
+        font-weight: bold;  
+    }
+}
+
+/* Media pour Tablette*/
+@media screen and (min-width:768px) and (max-width:992px){
+    
+    main{
+        & nav{
+            & ul{
+                list-style-type: none;
+                @include flex_row;
+                align-items: center;
+                justify-content: space-around;
+                height: 150px;
+            }
+        }
+    }   
+    .explorer{
+        @include flex_column;
+            align-items: center;
+            justify-content: center;
+    }
+    .resto{
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        text-align: center;
+        
+    }
+    .second{
+        @include flex_row;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+
+        article{
+            @include flex_row;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+            margin: 20px 0px;
+            max-height: 400px;
+            max-width: 350px;
+            .card_picture,.card_picture-1 {
+                height: 250px;
+                width: 350px;
+            }         
+            .card_desciption{
+                background-color: $tertiary;
+                height: 100px;
+                width: 350px;
+            }
+        }
+    }
+    
+}
+
+/* Media pour Ordinateur*/
+@media screen and (min-width:992px){
+
+    main{
         height: auto;
         width: 100%;
 
-        & aside{
-            @include flex_column;
-            justify-content:left;
-            align-items: flex-start;
-            height:600px;
-            width:768px;
+        .first{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            height:500px;
+            width: 100%;
 
-            & .box_img{               
-                position: absolute;
-                z-index:1;            
-                height: 350px;
-                width: 98%;                
-                & img{
-                    position: absolute;
-                    z-index:1;    
-                    height: 350px;
-                    width: 98%;
-                      
-                }                
-                & h6{
-                    @include marge_zero;
-                    display:flex;
+            .explorer{               
+                height:500px;
+                width: 60%;
+            }
+
+            nav{
+                @include flex_column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                border: 1px solid $first;
+                height: 500px;
+                width: 250px;
+                ul{
                     justify-content: center;
-                    align-items: center;
-                    background-color: $tertiary;
-                    color:darken($color: $tertiary, $amount: 45%);
-                    position: relative;
-                    left: 75%;
-                    top: 5%;                
-                    font-size: 15px;
-                    height:40px;
-                    width: 100px;
-                    z-index:2;    
-                }
-            }  
-
-            & .box_undermenu{
-                @include flex_row;
-                position: relative;
-                left: 0%;
-                top: 58%;
-                height:150px;
-                width: 98%; 
-                      
-            
-                & .name_menu{
-                    @include flex_column;
-                    height:150px;
-                    width: 400px;
-                    & h4{
-                        display:flex;
-                        justify-content: flex-start;
-                        align-items:center;
-                        @include marge_zero;
-                        color:$standard;
-                        font-size: 24px;
-                        height: 50px;
-                        width: 100%;
-                    }
-                    
-                    & h5{
-                        display:flex;
-                        justify-content: flex-start;
-                        align-items:center;
-                        @include marge_zero;
-                        color:$standard;
-                        font-size: 20px;
-                        height: 50px;
+                    height: 400px;
+                    width: 100%;
+                    & li{
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: auto;
                         width: 100%;
                     }
                 }
             }
-
+        }    
+    }   
+    .icon{
+        &_number{
+            width: 200px;
         }
-    }    
+        &_choice{
+            margin: 5px 0px;
+        }
+    
+    }
+    
+    .resto{
+        @include flex_row;
+        justify-content: center;
+        align-items: center;
+        margin-block-start: 0em;
+        margin-block-end: 2em;
+        
+        height: 100px;
+        width: 100%;
+        
+    }
+    .second{
+        @include flex_row;
+        
+        justify-content:space-between;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        
+
+
+        article{
+            @include flex_row;
+            flex-wrap: wrap;
+            justify-content:center;
+            align-items: center;
+            margin: 5px 0px;
+            max-height: 400px;
+            max-width: 350px;
+            .card_picture,.card_picture-1 {
+                height: 250px;
+                width: 200px;
+            }         
+            .card_desciption{
+                background-color: $tertiary;
+                height: 100px;
+                width: 200px;
+            }
+        }
+    }
+
 }
-
-
-
-

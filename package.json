@@ -1,10 +1,11 @@
 {
-  "name": "ohmyfood",
+  "name": "menu",
   "version": "1.0.0",
   "description": "restaurant menu",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/styles.scss:./css/styles.css"
+    "sass":"sass --watch ./sass/styles.scss:./css/styles.css",
+    "menu":"sass --watch ./sass/menu.scss:./css/menu.css"
   },
   "author": "Robin Sebastien",
   "license": "ISC",
@@ -15,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Devsebro99/ohmyfood/issues"
   },
-  "homepage": "https://github.com/Devsebro99/ohmyfood#readme"
+  "homepage": "https://github.com/Devsebro99/ohmyfood#readme",
+  "dependencies": {
+    "init": "^0.1.2"
+  },
+  "devDependencies": {}
 }

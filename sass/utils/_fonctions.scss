@@ -1,0 +1,17 @@
+/* Insertion des images menu*/
+@for $i from 1 through 4{
+    .card_picture-#{$i} {
+        background: url("../images/restaurants/menu_#{$i}.jpg");
+        background-size:cover;
+    }
+}
+
+@for $i from 1 through 4{
+    .img_menu-#{$i} { 
+        background: url("./../images/restaurants/menu_#{$i}.jpg");
+        background-size: cover;
+        min-height: 300px;
+        min-width: 100%;
+        box-shadow: 5px 5px 5px $first;
+    }
+}
