@@ -6,26 +6,25 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src="https://kit.fontawesome.com/00c260633f.js" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='./../css/menu.css'>        
-        <link rel="stylesheet" media="screen" href="css/normalize.css"/>
-
+        <link rel="stylesheet" media="screen" href="./../css/normalize.css"/>
     </head>
     <body>
         <header>
-            <div class="header">
-                <a  href="./../index.html">
-                    <i class="header_arrow fa-solid fa-arrow-left"></i>
-                </a>
-                <img class="header_logo" src="./../images/logo/ohmyfood.png" alt="Logo Ohmyfoot">
-            </div>  
+            <a  href="./../index.html">
+                <i class="header_arrow fa-solid fa-arrow-left"></i>
+            </a>
+            <img class="header_logo" src="./../images/logo/ohmyfood.svg" alt="Logo Ohmyfood"/> 
         </header>
+        
         <main>
             <section class="primary">
-                <div class="img_menu-1" alt="Image menu 01" ></div>
-                <div class="img_desciption">
-                    <h1>La palette du goût</h1>
-                    <i class="heart_full fa-solid fa-heart"></i>
-                    <i class="heart_empty fa-regular fa-heart"></i> 
-                </div> 
+                <div class="img_menu-1" alt="Image menu 01" >
+                    <div class="img_desciption">
+                        <h1>La palette du goût</h1>  
+                        <i class="heart_empty fa-regular fa-heart"></i>
+                        <i class="heart_full fa-solid fa-heart"></i> 
+                    </div> 
+                </div>
             </section>
                    
             <section class="secondary">
@@ -37,8 +36,11 @@
                                 <h3>Fricassée d'escargot</h3>
                                 <h4>Au piment d'Espelette</h4>
                             </div>
-                            <p class="dish_price">25€</p>
                             
+                            <p class="dish_price">25€</p>
+                            <div class="selector">
+                                <input id="circle" type="checkbox"/>
+                            </div>
                         </li>
 
                         <li class="dish_list">
@@ -47,6 +49,7 @@
                                 <h4>Et ses copeaux de truffe noire</h4>
                             </div>
                             <p class="dish_price">35€</p>
+                            <input class="selector" type="checkbox"/>
                             
                         </li>
 
@@ -56,7 +59,7 @@
                                 <h4>Assaisonné à la truffe sur lit de caviar</h4>
                             </div>
                             <p class="dish_price">20€</p>
-                            
+                            <div class="selector"></div>
                         </li>
                    </ul>
                 </article>
@@ -69,7 +72,7 @@
                                 <h4>À la truffe noire sur sa purée de panais</h4>
                             </div>
                             <p class="dish_price">40€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
                         <li class="dish_list">
@@ -78,7 +81,7 @@
                                 <h4>Et ses copeaux de truffe noire</h4>
                             </div>    
                             <p class="dish_price">35€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
                         <li class="dish_list">
@@ -87,43 +90,47 @@
                                 <h4>Aux agrumes</h4>
                             </div>    
                             <p class="dish_price">44€</p>
-                            
+                            <div class="selector"></div>
                         </li>
                    </ul>
                 </article>
-                <article class="dish">
+                <article class="dish dessert">
                     <h2>Desserts</h2>
-                    <ul>
-                        <li class="dish_list">
+                    <ul class="dessert_card">
+                        <li class="dish_list dessert_list">
                             <div class="dish_serv">
                                 <h3>Paris-Brest</h3>
                                 <h4>Revisité</h4>
                             </div>    
                             <p class="dish_price">18€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
-                        <li class="dish_list">
+                        <li class="dish_list dessert_list">
                             <div class="dish_serv">
                                 <h3>Macaron au chocolat d'exception</h3>
                                 <h4>Et glace à la vanille de Madagascar</h4>
                             </div>    
                             <p class="dish_price">22€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
-                        <li class="dish_list">
+                        <li class="dish_list dessert_list">
                             <div class="dish_serv">
                                 <h3>Mousse au chocolat</h3>
                                 <h4>Au piment d'Espelette et à la truffe noire</h4>
                             </div>    
                             <p class="dish_price">23€</p>
-                            
+                            <div class="selector"></div>
                         </li>
                    </ul>
                 </article>
-                <button class="btn"> Commander</button>
-            </section>          
+            </section>
+
+            <section class="tertiary">
+                <button class="btn"> Commander</button> 
+            </section>
+
         </main>
         <footer>
             <div class="oh">ohmyfood</div>

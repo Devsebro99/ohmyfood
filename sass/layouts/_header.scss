@@ -1,0 +1,17 @@
+
+header{
+    @include flex_row;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+.header_arrow{
+    height: 25px;
+    width: 50px;
+}
+.header_logo{
+   margin: 0px 40px;
+
+}

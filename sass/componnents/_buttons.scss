@@ -1,19 +1,15 @@
 
-
-
 .btn{
-    
     color: $white;
-    background-color:$first;
+    @include shadow;
+    border: transparent;
+    background: -webkit-linear-gradient(100deg,$first, $secondary);
     font-size: 18px;
     border-radius: 30px;
-    height:50px;
-    width:auto;
     height: 50px;
     width:250px;
     margin: 20px 0px;
-}            
-
+}   
 
 /* animation des coeurs*/
 .card_desciption,.img_desciption{
@@ -25,39 +21,32 @@
         position:absolute;
         right: 10%;
         top: 50%;
-        transform: translateY(-50%); 
+        transform: translateY(-50%);
+    }
 
-    }
-    .heart_full{  
-        color: transparent;
-        background: linear-gradient($first,$secondary);
-        background-clip: text;
-        -webkit-background-clip: text;
+    .heart_full{    
+        transition-duration: 400ms;
+        transition-timing-function: ease-in;
+        color: $darksecondary;
+        //background: -webkit-linear-gradient(100deg,$first, $secondary);
+        //color: transparent;
         opacity: 0;
-    }
-    &:hover .heart_full{
-        opacity: 1;
-        
+        &:hover {
+            opacity: 1;        
+        } 
     }
 }
 
-
-    
-
-
-    
-
-
-
-    
-
-
-@media screen and (min-width:768px) and (max-width:992px){
-    .heart{
-        background-color: $tertiary;
-    }
-    
-    .heart_empty{
-        background-color: $tertiary;
+.selector{
+    @include flex-row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius:  0px 20px 20px 0px;
+    background-color: $tertiary;
+    #circle{
+        color:red;
+        background-color: red;
     }
 }

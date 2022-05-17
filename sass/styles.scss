@@ -1,14 +1,15 @@
-@media screen {
-    
-    @import "./base/box-sizing";
-    @import "./base/police"; 
-    @import "./utils/_variables";  
-    @import "./utils/fonctions";
-    @import "./utils/_mixins";
-    @import "./utils/placeholders";
-    @import "./componnents/buttons";
-    @import "./layouts/form";
-    @import "./layouts/footer";
-    @import "./pages/header_homepage";
-    @import "./pages/main_homepage";
-}
+ 
+@import "./base/box-sizing";
+@import "./base/police"; 
+@import "./utils/_variables";  
+@import "./utils/fonctions";
+@import "./utils/_mixins";
+@import "./utils/placeholders";
+@import "./utils/animation";
+@import "./componnents/buttons";
+@import "./layouts/form";
+@import "./layouts/footer";
+@import "./layouts/spinner";
+@import "./layouts/header";
+@import "./pages/main_homepage";    
+

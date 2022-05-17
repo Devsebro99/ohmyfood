@@ -13,3 +13,6 @@
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
+@mixin shadow{
+    box-shadow:2px 5px 7px 2px $gray;
+}

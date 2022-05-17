@@ -6,9 +6,10 @@
     @import "./utils/fonctions";
     @import "./utils/_mixins";
     @import "./utils/placeholders";
+    @import "./utils/animation";
     @import "./componnents/buttons";
     @import "./layouts/form";
     @import "./layouts/footer";
-    @import "./layouts/_header_menu";
+    @import "./layouts/header";
     @import "./layouts/_main_menu";
 }

@@ -9,13 +9,10 @@ footer{
         display: flex;
         flex-direction: column;
         padding-inline-start: 0px;
-        list-style-type:none;
-        
         li{
             @include flex_row;
             justify-content: flex-start;
             align-items: center;
-
             p{
                 font-size: 17px;
                 color: $white;
@@ -34,7 +31,6 @@ footer{
     font-style: italic;
     margin-bottom: 10px;   
 }
-
 
 @media screen and (min-width:992px){
 

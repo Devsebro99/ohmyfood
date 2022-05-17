@@ -6,25 +6,25 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src="https://kit.fontawesome.com/00c260633f.js" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='./../css/menu.css'>        
-        <link rel="stylesheet" media="screen" href="css/normalize.css"/>
+        <link rel="stylesheet" media="screen" href="./../css/normalize.css"/>
 
     </head>
     <body>
         <header>
-            <div class="header">
+           
                 <a  href="./../index.html">
                     <i class="header_arrow fa-solid fa-arrow-left"></i>
                 </a>
                 <img class="header_logo" src="./../images/logo/ohmyfood.png" alt="Logo Ohmyfoot">
-            </div>  
+            
         </header>
         <main>
             <section class="primary">
                 <div class="img_menu-4" alt="Image menu 01" ></div>
                 <div class="img_desciption">
                     <h1>Le délice des sens</h1>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-solid fa-heart"></i>
+                    <i class="heart_empty fa-regular fa-heart"></i>
+                    <i class="heart_full fa-solid fa-heart"></i>
                 </div>
             </section>
 
@@ -38,7 +38,7 @@
                                 <h4>Assaisonné au yuzu</h4>
                             </div>
                             <p class="dish_price">25€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
                         <li class="dish_list">
@@ -47,7 +47,7 @@
                                 <h4>Et sa farandole de petits légumes</h4>
                             </div>
                             <p class="dish_price">35€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
                         <li class="dish_list">
@@ -56,7 +56,7 @@
                                 <h4>Aux truffes</h4>
                             </div>
                             <p class="dish_price">20€</p>
-                            
+                            <div class="selector"></div>
                         </li>
                    </ul>
                 </article>
@@ -69,7 +69,7 @@
                                 <h4>Et sa crème de truffe</h4>
                             </div>
                             <p class="dish_price">40€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
                         <li class="dish_list">
@@ -78,7 +78,7 @@
                                 <h4>Et ses légumes de saison</h4>
                             </div>    
                             <p class="dish_price">35€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
                         <li class="dish_list">
@@ -87,43 +87,46 @@
                                 <h4>Et sa purée de panais</h4>
                             </div>    
                             <p class="dish_price">44€</p>
-                            
+                            <div class="selector"></div>
                         </li>
                    </ul>
                 </article>
                 <article class="dish">
                     <h2>Desserts</h2>
-                    <ul>
-                        <li class="dish_list">
+                    <ul class="dessert_card">
+                        <li class="dish_list dessert_list">
                             <div class="dish_serv">
                                 <h3>Farandole de desserts</h3>
                                 <h4>Du chef</h4>
                             </div>    
                             <p class="dish_price">18€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
-                        <li class="dish_list">
+                        <li class="dish_list dessert_list">
                             <div class="dish_serv">
                                 <h3>Crème brulée</h3>
                                 <h4>Revisitée</h4>
                             </div>    
                             <p class="dish_price">22€</p>
-                            
+                            <div class="selector"></div>
                         </li>
 
-                        <li class="dish_list">
+                        <li class="dish_list dessert_list">
                             <div class="dish_serv">
                                 <h3>Tiramisu</h3>
                                 <h4>À la noisette</h4>
                             </div>    
                             <p class="dish_price">23€</p>
-                            
+                            <div class="selector"></div>
                         </li>
                    </ul>
                 </article>
-                <button class="btn"> Commander</button>
-            </section>          
+                
+            </section> 
+            <section class="tertiary">
+                <button class="btn"> Commander</button> 
+            </section>         
             </main>
             <footer>
                 <div class="oh">ohmyfood</div>

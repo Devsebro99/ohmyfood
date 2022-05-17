@@ -6,21 +6,26 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <script src="https://kit.fontawesome.com/00c260633f.js" crossorigin="anonymous"></script>
         <link rel='stylesheet' href='css/styles.css'/>   
-        <link rel="stylesheet" media="screen" href="css/normalize.css"/>
+        <link rel="stylesheet" media="screen" href="./css/normalize.css"/>
     </head>
     <body>
-        <!--Partie Entete-->
+        <!--Loading Spinner-->
+        <div class="loader">
+        </div>
+        
+        <!--header part-->
         <header>
-            <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfoot"/>            
+            <img src="images/logo/ohmyfood.svg" alt="Logo Ohmyfoot"/>            
         </header>
-        <!--Partie Principale-->
+        
         <main>
+            <!--first part-->
             <section class="first">
-                <div class="explorer">
-                    <!--Formulaire:Choix de la ville-->
-                    <div class="location"> 
-                        <i class="fa-solid fa-location-dot" ></i>                    
-                        <form method="post" action="#">                                           
+                <div class="font"></div>
+                <div class="explorer">  
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot"></i>                     
+                        <form method="post" action="#">                                   
                             <input class="formulaire" type="text" placeholder="Paris, Belleville"/>
                             <label></label>                       
                         </form>
@@ -29,21 +34,21 @@
                     <span>Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
                     <input class="btn" type="submit" value="Explorer nos restaurants"/>               
                 </div>    
-
-                <nav><!--Fonctionnement du site-->
+                
+                <nav class="working">
                     <h2>Fonctionnement</h2>
                     <ul>                        
-                        <li>
+                        <li class="icon">
                             <i class="icon_number fa-solid fa-1"></i>
                             <i class="icon_choice fa-solid fa-mobile-screen-button"></i>
                             <p>Choisissez un restaurant</p>
                         </li>
-                        <li>
+                        <li class="icon">
                             <i class="icon_number fa-solid fa-2"></i>
                             <i class="icon_choice fa-solid fa-list"></i>
                             <p>Composez votre menu</p>
                         </li>
-                        <li>
+                        <li class="icon">
                             <i class="icon_number fa-solid fa-3"></i>
                             <i class="icon_choice fa-solid fa-store"></i>
                             <p>Dégustez au restaurant</p>
@@ -52,69 +57,71 @@
                 </nav>        
             </section>
 
-            <h2 class="resto">Restaurants</h2>
+            <!--second part-->
             
             <section  class="second">
+                <h2>Restaurants</h2>
                 <article>
-                    <!--menu la palette du gout-->
                     <a class="card" href="./html/menu_1.html"> 
                         <div class="card_picture card_picture-1 new" alt="Image menu 1"></div>
                     </a>
-
                     <div class="card_desciption">
-                        <div class="card_text">
+                        <div class="card_desciption_text">
                             <h3>La palette du goût</h3>
                             <p>Charonne</p>
                         </div>
-                        <i class="heart_full fa-solid fa-heart"></i>
-                        <i class="heart_empty fa-regular fa-heart"></i>           
+                        <i class="heart_empty fa-regular fa-heart"></i>
+                        <i class="heart_full fa-solid fa-heart"></i>          
                     </div>
                 </article>
+
                 <article>
-                    <!--menu la palette du gout-->
                     <a class="card" href="./html/menu_2.html" > 
                         <div class="card_picture card_picture-2 new" alt="Image menu 2"></div>
                     </a>
                     <div class="card_desciption">
-                        <div class="card_text">
+                        <div class="card_desciption_text">
                             <h3>La note enchantée</h3>
                             <p>Ménilmontant</p>
                         </div>    
-                        <i class="heart_full fa-solid fa-heart"></i>          
-                        <i class="heart_empty fa-regular fa-heart"></i>    
+                                  
+                        <i class="heart_empty fa-regular fa-heart"></i>
+                        <i class="heart_full fa-solid fa-heart"></i>    
                     </div>    
                 </article>
+
                 <article>
-                    <!--menu A la française-->
-                    <a href="./html/menu_3.html" class="card"> 
+                    <a class="card" href="./html/menu_3.html"> 
                         <div class="card_picture card_picture-3" alt="Image menu 3"></div>
                     </a>
                     <div class="card_desciption">
-                        <div class="card_text">
+                        <div class="card_desciption_text">
                             <h3>A la française</h3>
                             <p>Cité Rouge</p>
                         </div>                   
-                        <i class="heart_full fa-solid fa-heart"></i>          
-                        <i class="heart_empty fa-regular fa-heart"></i>    
+                                  
+                        <i class="heart_empty fa-regular fa-heart"></i>
+                        <i class="heart_full fa-solid fa-heart"></i>    
                     </div>    
                 </article>
                 <article>
-                    <!--menu Le délice des sens-->
-                    <a href="./html/menu_4.html" class="card"> 
+                    <a class="card" href="./html/menu_4.html"> 
                         <div class="card_picture card_picture-4" alt="Image menu 4"></div>
                     </a>
                     <div class="card_desciption">
-                        <div class="card_text">
+                        <div class="card_desciption_text">
                             <h3>Le délice des sens</h3>
                             <p>Folie-Méricourt</p>
                         </div>                       
-                        <i class="heart_full fa-solid fa-heart"></i>          
-                        <i class="heart_empty fa-regular fa-heart"></i>    
+                                  
+                        <i class="heart_empty fa-regular fa-heart"></i>
+                        <i class="heart_full fa-solid fa-heart"></i>    
                     </div>    
                 </article>
             </section>
         </main>
-        <!--Partie Bas de Page-->
+
+        <!--Footer page-->
         <footer>
             <div class="oh">ohmyfood</div>
             <ul>                

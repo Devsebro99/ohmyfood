@@ -10,8 +10,10 @@
     .img_menu-#{$i} { 
         background: url("./../images/restaurants/menu_#{$i}.jpg");
         background-size: cover;
-        min-height: 300px;
+        min-height: 400px;
         min-width: 100%;
-        box-shadow: 5px 5px 5px $first;
+        position: relative;
+        z-index: 1;
     }
 }
+
