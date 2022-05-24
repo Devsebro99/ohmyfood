@@ -96,9 +96,10 @@ body{
 .tertiary{
     @include flex-row;
     @include flex_center;
-    height: 100px; 
+    height: 80px; 
     width:100%;
     background-color: $lightgray;
+    padding-bottom: 20px;
 }
 
 
