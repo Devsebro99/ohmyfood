@@ -6,6 +6,10 @@
     display: flex;
     flex-direction: column;
 }
+@mixin flex_center{
+    justify-content: center;
+    align-items: center;
+}
 @mixin marge_zero {
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -15,4 +19,16 @@
 }
 @mixin shadow{
     box-shadow:2px 5px 7px 2px $gray;
+    cursor: pointer;
+}
+@mixin darkshadow{
+    box-shadow:2px 5px 7px 2px lighten($black, 60%);
+}
+
+@mixin lightgradient{
+    background: -webkit-linear-gradient(100deg,lighten($first,5%),
+     lighten($secondary,5%));
+}
+@mixin gradient {
+    background: -webkit-linear-gradient(100deg,$first, $secondary);
 }

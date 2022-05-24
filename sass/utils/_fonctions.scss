@@ -1,4 +1,4 @@
-/* Insertion des images menu*/
+
 @for $i from 1 through 4{
     .card_picture-#{$i} {
         background: url("../images/restaurants/menu_#{$i}.jpg");
@@ -17,3 +17,16 @@
     }
 }
 
+@for $i from 1 through 10{
+    .ord-#{$i}{
+        animation: anima 3s linear 200ms*$i both;
+        @keyframes anima{
+            0%      {
+                transform: scale(0);
+            }
+            100%    {
+                transform: scale(1);
+            }
+        }
+    }        
+}

@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "sass":"sass --watch ./sass/styles.scss:./css/styles.css",
-    "menu":"sass --watch ./sass/menu.scss:./css/menu.css"
+    "menu":"sass --watch ./sass/menu.scss:./css/menu.css",
+    "prefix":"postcss ./css/styles.css --use autoprefixer -d ./css/prefixed/",
+    "prefmenu":"postcss ./css/menu.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "Robin Sebastien",
   "license": "ISC",
+  "browserslist":"last 4 versions",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Devsebro99/ohmyfood.git"

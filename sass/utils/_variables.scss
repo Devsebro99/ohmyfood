@@ -4,20 +4,16 @@ $tertiary:#99E2D0;
 $black:black;
 $white:white;
 
-/*variant First*/
 $lightfirst:lighten($first,35%);
 $mediumfirst:lighten($first,30%);
 
-/*variant Secondary*/
 $darksecondary:darken($secondary,40%);
 $lightsecondary:lighten($secondary,22%);
 
-/*variant tertiary*/
 $darktertiary:darken($tertiary,50%);
 $lighttertiary:lighten($tertiary,20%);
 
-/*variant gray*/
 $lightgray:lighten($black,96%);
 $gray:darken($white,15%);
-$darkgray:lighten($black,80%);
+$darkgray:lighten($black,50%);
 

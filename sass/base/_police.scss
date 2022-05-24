@@ -1,20 +1,18 @@
 @font-face {
-    font-family: "shrikhand", "sans-sherif";
-    src: url(../../images/police/Shrikhand/Shrikhand-Regular.ttf);
-    src: url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff);
-    src: url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff2);
+    font-family: "shrikhand";
+    src:    url(../../images/police/Shrikhand/Shrikhand-Regular.ttf) format("ttf"),
+            url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff) format("woff"),
+            url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff2) format("woff2");
     
-
-    font-family: "roboto", "cursive";
-    src: url(../../images/police/roboto/Roboto-Regular.ttf);
-    src: url(../../images/police/roboto/roboto-regular-webfont.woff);
-    src: url(../../images/police/roboto/roboto-regular-webfont.woff2);   
+    font-family: "roboto";
+    src:    url(../../images/police/roboto/Roboto-Regular.ttf) format("ttf"),
+            url(../../images/police/roboto/roboto-regular-webfont.woff) format("woff"),
+            url(../../images/police/roboto/roboto-regular-webfont.woff2) format("woff2");   
 }
 
-h1,h2,h3{
-    font-family: "shrikhand", "sans-sherif";
+h1,h2,h3,h5{
+    font-family: "shrikhand","sans-serif";
 }
-
-p{
-    font-family: "roboto", "cursive";
+p,span,h4{
+    font-family: "roboto","cursive";
 }
