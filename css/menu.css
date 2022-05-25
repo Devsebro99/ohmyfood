@@ -13,7 +13,7 @@
     font-family: "shrikhand", "sans-serif";
   }
 
-  p, span, h4 {
+  p, span, h4, .footer_link, .btn, .new {
     font-family: "roboto", "cursive";
   }
 
@@ -74,7 +74,7 @@
   }
 
   .ord-1 {
-    animation: anima 3s linear 200ms both;
+    animation: anima 2s linear 200ms both;
   }
   @keyframes anima {
     0% {
@@ -86,7 +86,7 @@
   }
 
   .ord-2 {
-    animation: anima 3s linear 400ms both;
+    animation: anima 2s linear 400ms both;
   }
   @keyframes anima {
     0% {
@@ -98,7 +98,7 @@
   }
 
   .ord-3 {
-    animation: anima 3s linear 600ms both;
+    animation: anima 2s linear 600ms both;
   }
   @keyframes anima {
     0% {
@@ -110,7 +110,7 @@
   }
 
   .ord-4 {
-    animation: anima 3s linear 800ms both;
+    animation: anima 2s linear 800ms both;
   }
   @keyframes anima {
     0% {
@@ -122,7 +122,7 @@
   }
 
   .ord-5 {
-    animation: anima 3s linear 1000ms both;
+    animation: anima 2s linear 1000ms both;
   }
   @keyframes anima {
     0% {
@@ -134,7 +134,7 @@
   }
 
   .ord-6 {
-    animation: anima 3s linear 1200ms both;
+    animation: anima 2s linear 1200ms both;
   }
   @keyframes anima {
     0% {
@@ -146,7 +146,7 @@
   }
 
   .ord-7 {
-    animation: anima 3s linear 1400ms both;
+    animation: anima 2s linear 1400ms both;
   }
   @keyframes anima {
     0% {
@@ -158,7 +158,7 @@
   }
 
   .ord-8 {
-    animation: anima 3s linear 1600ms both;
+    animation: anima 2s linear 1600ms both;
   }
   @keyframes anima {
     0% {
@@ -170,7 +170,7 @@
   }
 
   .ord-9 {
-    animation: anima 3s linear 1800ms both;
+    animation: anima 2s linear 1800ms both;
   }
   @keyframes anima {
     0% {
@@ -182,7 +182,7 @@
   }
 
   .ord-10 {
-    animation: anima 3s linear 2000ms both;
+    animation: anima 2s linear 2000ms both;
   }
   @keyframes anima {
     0% {
@@ -198,7 +198,7 @@
       transform: rotate(1turn);
     }
     100% {
-      transform: rotate(4turn);
+      transform: rotate(5turn);
     }
   }
   @keyframes ghost {
@@ -213,10 +213,11 @@
       opacity: 0.5;
     }
     90% {
-      opacity: 0.3;
+      opacity: 0.4;
     }
-    99% {
+    98% {
       transform: translateX(0px);
+      opacity: 0.3;
     }
     100% {
       opacity: 0;
@@ -249,7 +250,7 @@
     width: 250px;
     margin: 20px 0px;
   }
-  .btn:active {
+  .btn:hover {
     box-shadow: 2px 5px 7px 2px #999999;
     background: -webkit-linear-gradient(100deg, #a16be0, #ff93e1);
   }
@@ -314,12 +315,13 @@
     background-color: #d9d9d9;
   }
 
-  .pointer {
-    cursor: pointer;
-  }
-
   .solid {
     margin-right: 20px;
+  }
+
+  footer ul li, .footer_link {
+    color: white;
+    text-decoration: none;
   }
 
   h5 {
@@ -350,7 +352,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    color: white;
   }
 }
 @media screen and (min-width: 768px) {
@@ -485,7 +486,7 @@
     transition: margin-right 1s;
   }
   .secondary .dish_list:active .selector .check {
-    animation: rotate 1s;
+    animation: rotate 700ms;
   }
   .secondary .dish_list:hover {
     box-shadow: 2px 5px 7px 2px #999999;

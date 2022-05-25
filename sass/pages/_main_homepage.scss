@@ -87,10 +87,14 @@ body{
     background-color: $lightgray;
     padding: 25px 15px 15px 15px;
 }
+article{
+    &:hover{
+        box-shadow: 5px 5px 5px $black;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
+}
 .card{
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 100%;
     &_picture{  
         height: 350px;
         width: 100%;
@@ -124,7 +128,7 @@ body{
         width: 100px;
         background-color:$tertiary;
         color: $darktertiary;  
-        font-weight: bold;  
+        font-weight: bold;
     }   
 }      
 
@@ -182,7 +186,7 @@ body{
             @include flex_center;
             flex-wrap: wrap;
             margin: 20px 0px;
-            max-height: 400px;
+            max-height: 350px;
             max-width: 350px;
             .card_picture,.card_picture-1 {
                 height: 250px;
@@ -261,21 +265,16 @@ body{
             width: 100%;
         }
         article{
-            @include flex_row;
-            flex-wrap: wrap;
-            justify-content:center;
-            align-items: center;
+            height: 350px;
+            min-width: 22%;
+            max-width: 25%;
             margin: 5px 0px;
-            max-height: 400px;
-            max-width: 300px;
             .card_picture,.card_picture-1 {
                 height: 250px;
-                width: 220px;
             }         
             .card_desciption{
                 background-color: $tertiary;
                 height: 100px;
-                width: 220px;
             }
         }
     }

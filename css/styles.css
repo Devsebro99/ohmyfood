@@ -12,7 +12,7 @@ h1, h2, h3, h5 {
   font-family: "shrikhand", "sans-serif";
 }
 
-p, span, h4 {
+p, span, h4, .footer_link, .btn, .new {
   font-family: "roboto", "cursive";
 }
 
@@ -73,7 +73,7 @@ p, span, h4 {
 }
 
 .ord-1 {
-  animation: anima 3s linear 200ms both;
+  animation: anima 2s linear 200ms both;
 }
 @keyframes anima {
   0% {
@@ -85,7 +85,7 @@ p, span, h4 {
 }
 
 .ord-2 {
-  animation: anima 3s linear 400ms both;
+  animation: anima 2s linear 400ms both;
 }
 @keyframes anima {
   0% {
@@ -97,7 +97,7 @@ p, span, h4 {
 }
 
 .ord-3 {
-  animation: anima 3s linear 600ms both;
+  animation: anima 2s linear 600ms both;
 }
 @keyframes anima {
   0% {
@@ -109,7 +109,7 @@ p, span, h4 {
 }
 
 .ord-4 {
-  animation: anima 3s linear 800ms both;
+  animation: anima 2s linear 800ms both;
 }
 @keyframes anima {
   0% {
@@ -121,7 +121,7 @@ p, span, h4 {
 }
 
 .ord-5 {
-  animation: anima 3s linear 1000ms both;
+  animation: anima 2s linear 1000ms both;
 }
 @keyframes anima {
   0% {
@@ -133,7 +133,7 @@ p, span, h4 {
 }
 
 .ord-6 {
-  animation: anima 3s linear 1200ms both;
+  animation: anima 2s linear 1200ms both;
 }
 @keyframes anima {
   0% {
@@ -145,7 +145,7 @@ p, span, h4 {
 }
 
 .ord-7 {
-  animation: anima 3s linear 1400ms both;
+  animation: anima 2s linear 1400ms both;
 }
 @keyframes anima {
   0% {
@@ -157,7 +157,7 @@ p, span, h4 {
 }
 
 .ord-8 {
-  animation: anima 3s linear 1600ms both;
+  animation: anima 2s linear 1600ms both;
 }
 @keyframes anima {
   0% {
@@ -169,7 +169,7 @@ p, span, h4 {
 }
 
 .ord-9 {
-  animation: anima 3s linear 1800ms both;
+  animation: anima 2s linear 1800ms both;
 }
 @keyframes anima {
   0% {
@@ -181,7 +181,7 @@ p, span, h4 {
 }
 
 .ord-10 {
-  animation: anima 3s linear 2000ms both;
+  animation: anima 2s linear 2000ms both;
 }
 @keyframes anima {
   0% {
@@ -197,7 +197,7 @@ p, span, h4 {
     transform: rotate(1turn);
   }
   100% {
-    transform: rotate(4turn);
+    transform: rotate(5turn);
   }
 }
 @keyframes ghost {
@@ -212,10 +212,11 @@ p, span, h4 {
     opacity: 0.5;
   }
   90% {
-    opacity: 0.3;
+    opacity: 0.4;
   }
-  99% {
+  98% {
     transform: translateX(0px);
+    opacity: 0.3;
   }
   100% {
     opacity: 0;
@@ -248,7 +249,7 @@ p, span, h4 {
   width: 250px;
   margin: 20px 0px;
 }
-.btn:active {
+.btn:hover {
   box-shadow: 2px 5px 7px 2px #999999;
   background: -webkit-linear-gradient(100deg, #a16be0, #ff93e1);
 }
@@ -313,12 +314,13 @@ p, span, h4 {
   background-color: #d9d9d9;
 }
 
-.pointer {
-  cursor: pointer;
-}
-
 .solid {
   margin-right: 20px;
+}
+
+footer ul li, .footer_link {
+  color: white;
+  text-decoration: none;
 }
 
 h5 {
@@ -349,7 +351,6 @@ footer ul li {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -515,11 +516,12 @@ body {
   padding: 25px 15px 15px 15px;
 }
 
-.card {
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 100%;
+article:hover {
+  box-shadow: 5px 5px 5px black;
+  border-radius: 10px;
+  opacity: 0.8;
 }
+
 .card_picture {
   height: 350px;
   width: 100%;
@@ -621,7 +623,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 20px 0px;
-    max-height: 400px;
+    max-height: 350px;
     max-width: 350px;
   }
   .second article .card_picture, .second article .card_picture-1 {
@@ -700,23 +702,17 @@ body {
     width: 100%;
   }
   .second article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    height: 350px;
+    min-width: 22%;
+    max-width: 25%;
     margin: 5px 0px;
-    max-height: 400px;
-    max-width: 300px;
   }
   .second article .card_picture, .second article .card_picture-1 {
     height: 250px;
-    width: 220px;
   }
   .second article .card_desciption {
     background-color: #99E2D0;
     height: 100px;
-    width: 220px;
   }
 }
 

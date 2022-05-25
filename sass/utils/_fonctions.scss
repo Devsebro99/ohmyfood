@@ -5,7 +5,6 @@
         background-size:cover;
     }
 }
-
 @for $i from 1 through 4{
     .img_menu-#{$i} { 
         background: url("./../images/restaurants/menu_#{$i}.jpg");
@@ -17,9 +16,10 @@
     }
 }
 
+
 @for $i from 1 through 10{
     .ord-#{$i}{
-        animation: anima 3s linear 200ms*$i both;
+        animation: anima 2s linear 200ms*$i both;
         @keyframes anima{
             0%      {
                 transform: scale(0);
