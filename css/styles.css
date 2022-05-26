@@ -6,7 +6,7 @@
   font-family: "shrikhand";
   src: url(../../images/police/Shrikhand/Shrikhand-Regular.ttf) format("ttf"), url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff) format("woff"), url(../../images/police/Shrikhand/shrikhand-regular-webfont.woff2) format("woff2");
   font-family: "roboto";
-  src: url(../../images/police/roboto/Roboto-Regular.ttf) format("ttf"), url(../../images/police/roboto/roboto-regular-webfont.woff) format("woff"), url(../../images/police/roboto/roboto-regular-webfont.woff2) format("woff2");
+  src: url(../../images/police/roboto/Roboto-Regular.ttf) format("ttf");
 }
 h1, h2, h3, h5 {
   font-family: "shrikhand", "sans-serif";
@@ -366,7 +366,7 @@ footer ul li {
   bottom: 0%;
   z-index: 1;
   opacity: 1;
-  animation: ghost 3s forwards;
+  animation: ghost 2s forwards;
 }
 .loader::before {
   content: "";
@@ -376,7 +376,7 @@ footer ul li {
   border-color: #9356DC #ffe9f9 #99E2D0 #FF79DA;
   border-radius: 50%;
   z-index: 2;
-  animation: rotate 3s;
+  animation: rotate 2s;
 }
 
 header {

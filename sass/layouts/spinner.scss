@@ -10,7 +10,7 @@
     bottom: 0%;
     z-index: 1;
     opacity: 1;
-    animation: ghost 3s forwards;
+    animation: ghost 2s forwards;
     &::before{
         content: "";
         width: 100px;
@@ -19,7 +19,7 @@
         border-color: $first $lightsecondary $tertiary $secondary;
         border-radius: 50%;
         z-index: 2;
-        animation: rotate 3s;
+        animation: rotate 2s;
     }
 }
 
