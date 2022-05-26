@@ -1,6 +1,7 @@
 
 .solid{
    margin-right: 20px;
+   cursor: pointer;
 }
 footer ul li,.footer_link{
     color: $white;
@@ -10,7 +11,6 @@ footer ul li,.footer_link{
 h5{
     @include marge_zero;
     list-style-type: none;
-    font-family: "shrikhand", "sans-sherif";
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
@@ -27,22 +27,9 @@ footer{
             @include flex_row;
             justify-content: flex-start;
             align-items: center;
+            margin: 10px 0px;
         }
     }
 }
 
-@media screen and (min-width:768px) {
-    footer{
-        height: 160px;
-        ul{
-        @include flex-row;        
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 30px;
-        }  
-    }
-    .oh{
-        text-align: center;
-    }
-}
 

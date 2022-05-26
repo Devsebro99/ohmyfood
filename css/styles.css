@@ -316,6 +316,7 @@ p, span, h4, .footer_link, .btn, .new {
 
 .solid {
   margin-right: 20px;
+  cursor: pointer;
 }
 
 footer ul li, .footer_link {
@@ -330,7 +331,6 @@ h5 {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
   list-style-type: none;
-  font-family: "shrikhand", "sans-sherif";
   font-size: 30px;
   font-weight: bold;
   font-style: italic;
@@ -351,24 +351,9 @@ footer ul li {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  margin: 10px 0px;
 }
 
-@media screen and (min-width: 768px) {
-  footer {
-    height: 160px;
-  }
-  footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-  }
-
-  .oh {
-    text-align: center;
-  }
-}
 .loader {
   display: flex;
   justify-content: center;
