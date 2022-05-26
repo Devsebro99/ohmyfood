@@ -6,8 +6,8 @@
   "scripts": {
     "sass":"sass --watch ./sass/styles.scss:./css/styles.css",
     "menu":"sass --watch ./sass/menu.scss:./css/menu.css",
-    "prefix":"postcss ./css/styles.css --use autoprefixer -d ./css/prefixed/",
-    "prefmenu":"postcss ./css/menu.css --use autoprefixer -d ./css/prefixed/"
+    "prefix":"postcss ./css/styles.css --use autoprefixer -d ./css/prefixed",
+    "prefmenu":"postcss ./css/menu.css --use autoprefixer -d ./css/prefixed"
   },
   "author": "Robin Sebastien",
   "license": "ISC",
